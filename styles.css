@@ -1,0 +1,433 @@
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #afc3e3;
+    color: #171717;
+}
+
+
+.sella-background {
+    min-height: 100vh;
+    padding: 45px 15px;
+}
+
+
+.sella-paper {
+    width: 100%;
+    max-width: 910px;
+    margin: auto;
+    padding: 45px 35px 25px;
+    background: white;
+    border: 4px solid black;
+}
+
+
+.sella-photo {
+    position: relative;
+    background: #eeeeee;
+}
+
+.sella-photo img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+
+.sella-top {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+    align-items: center;
+}
+
+.sella-left-top {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.sella-photo-top {
+    width: 100%;
+    height: 235px;
+    border: 3px solid #222;
+    border-radius: 22px;
+    overflow: hidden;
+}
+
+.sella-intro {
+    background: #d1e1ff;
+    border: 3px solid black;
+    padding: 5px;
+    font-size: 24px;
+    line-height: 1.5;
+}
+
+.sella-right-top {
+    min-width: 0;
+}
+
+.sella-name {
+    text-align: center;
+    font-size: 30px;
+    line-height: 1.5;
+}
+
+
+.sella-photo-small {
+    width: calc(100% - 15px);
+    height: 245px;
+    margin: 20px 0 0 15px;
+    border: 2px solid #222;
+    overflow: hidden;
+}
+
+.sella-photo-small img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.sella-tag {
+    position: absolute;
+    z-index: 5;
+    background: white;
+    border: 2px solid #555;
+    border-radius: 12px;
+    padding: 4px 25px;
+    font-size: 48px;
+    font-weight: normal;
+    white-space: nowrap;
+}
+
+.sella-photo-small .sella-tag {
+    top: -15px;
+    left: -15px;
+}
+
+
+.sella-divider {
+    border: none;
+    border-top: 3px solid black;
+    margin: 20px 0 50px;
+}
+
+
+.sella-middle {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: stretch;
+}
+
+.sella-facts {
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+}
+
+.sella-funfact {
+    position: relative;
+    height: 275px;
+    padding: 65px 25px 15px;
+    background: #d1e1ff;
+    border: 2px solid black;
+    border-right: 0;
+}
+
+.sella-fact-tag {
+    top: -32px;
+    left: -5px;
+}
+
+.sella-funfact ul {
+    padding-left: 35px;
+    font-size: 25px;
+    line-height: 1.5;
+}
+
+.sella-small-facts {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 135px;
+}
+
+.sella-small-facts div {
+    display: flex;
+    align-items: flex-start;
+    background: #d1e1ff;
+    border: 2px solid black;
+    padding: 8px;
+    font-size: 25px;
+    line-height: 1.5;
+}
+
+.sella-photo-large {
+    width: 100%;
+    height: 410px;
+    border: 3px solid black;
+    overflow: hidden;
+}
+
+.sella-bottom {
+    display: grid;
+    grid-template-columns: 1.3fr 0.9fr 0.9fr;
+    gap: 35px;
+    align-items: center;
+}
+
+.sella-profile-bottom {
+    text-align: center;
+    min-width: 0;
+}
+
+.sella-photo-circle {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    border: 2px solid #555;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+.sella-photo-circle img {
+    border-radius: 50%;
+}
+
+.sella-name-box {
+    width: 100%;
+    border: 2px solid #555;
+    border-radius: 15px;
+    padding: 10px;
+    font-size: 48px;
+}
+
+
+.sella-box-blue {
+    position: relative;
+    min-height: 380px;
+    background: #d1e1ff;
+    border: 3px solid #333;
+    border-radius: 20px;
+    padding: 20px 12px;
+    text-align: center;
+}
+
+.sella-box-blue p {
+    font-size: 24px;
+    line-height: 1.5;
+}
+
+
+.sella-hobby h2 {
+    font-size: 38px;
+    font-weight: normal;
+    margin-bottom: 55px;
+}
+
+
+.sella-friends {
+    padding-top: 45px;
+}
+
+.sella-friends-tag {
+    top: -20px;
+    left: -20px;
+    font-size: 38px;
+    padding: 3px 10px;
+}
+
+
+@media (max-width: 750px) {
+    .sella-paper {
+        padding: 25px 18px;
+    }
+
+    .sella-top {
+        gap: 15px;
+    }
+
+    .sella-name {
+        font-size: 23px;
+    }
+
+    .sella-intro {
+        font-size: 18px;
+    }
+
+    .sella-photo-top {
+        height: 190px;
+    }
+
+    .sella-photo-small {
+        height: 200px;
+    }
+
+    .sella-funfact ul {
+        font-size: 19px;
+    }
+
+    .sella-small-facts div {
+        font-size: 19px;
+    }
+
+    .sella-photo-large {
+        height: 330px;
+    }
+
+    .sella-bottom {
+        gap: 15px;
+    }
+
+    .sella-name-box {
+        font-size: 35px;
+    }
+
+    .sella-box-blue {
+        min-height: 300px;
+    }
+
+    .sella-box-blue p {
+        font-size: 18px;
+    }
+
+    .sella-hobby h2 {
+        font-size: 30px;
+        margin-bottom: 40px;
+    }
+
+    .sella-friends-tag {
+        font-size: 28px;
+    }
+}
+
+
+@media (max-width: 500px) {
+    .sella-background {
+        padding: 12px 6px;
+    }
+
+    .sella-paper {
+        padding: 18px 10px;
+        border-width: 3px;
+    }
+
+    .sella-top {
+        gap: 10px;
+    }
+
+    .sella-photo-top {
+        height: 125px;
+        border-radius: 15px;
+    }
+
+    .sella-intro {
+        font-size: 12px;
+        line-height: 1.5;
+        padding: 4px;
+    }
+
+    .sella-name {
+        font-size: 15px;
+        line-height: 1.5;
+    }
+
+    .sella-photo-small {
+        height: 135px;
+        margin: 15px 0 0 10px;
+        width: calc(100% - 10px);
+    }
+
+    .sella-tag {
+        font-size: 24px;
+        padding: 4px 12px;
+        border-radius: 9px;
+    }
+
+    .sella-photo-small .sella-tag {
+        top: -12px;
+        left: -12px;
+    }
+
+    .sella-divider {
+        margin: 20px 0 35px;
+    }
+
+    .sella-funfact {
+        height: 175px;
+        padding: 42px 7px 8px;
+    }
+
+    .sella-fact-tag {
+        top: -22px;
+        left: -4px;
+    }
+
+    .sella-funfact ul {
+        font-size: 12px;
+        padding-left: 17px;
+        line-height: 1.6;
+    }
+
+    .sella-small-facts {
+        height: 85px;
+    }
+
+    .sella-small-facts div {
+        font-size: 12px;
+        padding: 5px;
+    }
+
+    .sella-photo-large {
+        height: 260px;
+    }
+
+    .sella-bottom {
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 8px;
+    }
+
+    .sella-name-box {
+        font-size: 21px;
+        padding: 5px;
+    }
+
+    .sella-box-blue {
+        min-height: 230px;
+        padding: 12px 5px;
+        border-radius: 13px;
+        border-width: 2px;
+    }
+
+    .sella-box-blue p {
+        font-size: 12px;
+        line-height: 1.5;
+    }
+
+    .sella-hobby h2 {
+        font-size: 21px;
+        margin-bottom: 35px;
+    }
+
+    .sella-friends {
+        padding-top: 35px;
+    }
+
+    .sella-friends-tag {
+        top: -15px;
+        left: -8px;
+        font-size: 18px;
+        padding: 3px 7px;
+    }
+}
+
+
